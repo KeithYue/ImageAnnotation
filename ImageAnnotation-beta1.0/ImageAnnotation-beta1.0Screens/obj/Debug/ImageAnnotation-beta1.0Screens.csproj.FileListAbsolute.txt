@@ -1,0 +1,6 @@
+D:\C#Programming\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0Screens\obj\Debug\ResolveAssemblyReference.cache
+D:\C#Programming\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0Screens\obj\Debug\ImageAnnotation-beta1.0.Screens.g.resources
+D:\C#Programming\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0\bin\Debug\ImageAnnotation-beta1.0.Screens.dll
+D:\C#Programming\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0\bin\Debug\ImageAnnotation-beta1.0.Screens.pdb
+D:\C#Programming\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0Screens\obj\Debug\ImageAnnotation-beta1.0.Screens.dll
+D:\C#Programming\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0\ImageAnnotation-beta1.0Screens\obj\Debug\ImageAnnotation-beta1.0.Screens.pdb

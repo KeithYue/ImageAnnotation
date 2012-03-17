@@ -1,0 +1,29 @@
+﻿<!--
+      *********    请勿修改此文件     *********
+      此文件由设计工具再生成。更改
+      此文件可能会导致错误。
+-->
+<SampleData:SampleDataImageSource xmlns:SampleData="clr-namespace:Expression.Blend.SampleData.SampleDataImageSource">
+	<SampleData:SampleDataImageSource.Collection>
+		<SampleData:Item Property1="Cras aliquam class" Property2="True"/>
+		<SampleData:Item Property1="Nam duis maecenas" Property2="False"/>
+		<SampleData:Item Property1="Nunc integer amet curae" Property2="True"/>
+		<SampleData:Item Property1="Aenean quisque praesent mauris" Property2="False"/>
+		<SampleData:Item Property1="Vivamus donec nullam" Property2="True"/>
+		<SampleData:Item Property1="Etiam ante" Property2="False"/>
+		<SampleData:Item Property1="Arcu accumsan bibendum" Property2="True"/>
+		<SampleData:Item Property1="Fusce diam" Property2="False"/>
+		<SampleData:Item Property1="Aliquam aliquet eget sed" Property2="True"/>
+		<SampleData:Item Property1="Dictumst lorem morbi" Property2="False"/>
+		<SampleData:Item Property1="Cras duis" Property2="True"/>
+		<SampleData:Item Property1="Nam maecenas aenean" Property2="False"/>
+		<SampleData:Item Property1="Sed class" Property2="True"/>
+		<SampleData:Item Property1="Nunc aliquam" Property2="False"/>
+		<SampleData:Item Property1="Dis curae praesent donec" Property2="True"/>
+		<SampleData:Item Property1="Etiam fusce integer" Property2="False"/>
+		<SampleData:Item Property1="Mauris est" Property2="True"/>
+		<SampleData:Item Property1="Amet hac nullam" Property2="False"/>
+		<SampleData:Item Property1="Accumsan leo mus" Property2="True"/>
+		<SampleData:Item Property1="Lorem ante nec morbi" Property2="False"/>
+	</SampleData:SampleDataImageSource.Collection>
+</SampleData:SampleDataImageSource>

@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2327A588-D5F2-4961-8009-12BFD2BDBD45}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <DefaultClrNameSpace>ImageAnnotation_beta1_0</DefaultClrNameSpace>
+    <RootNamespace>ImageAnnotation_beta1_0</RootNamespace>
+    <AssemblyName>ImageAnnotation-beta1.0</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <ApplicationIcon>Application.ico</ApplicationIcon>
+    <Utf8Output>true</Utf8Output>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ChilkatDotNet4">
+      <HintPath>..\..\..\Program Files\Chilkat Software Inc\Chilkat.NET-v4.0\ChilkatDotNet4.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV">
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.3.0.1416\bin\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI">
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.3.0.1416\bin\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util">
+      <HintPath>C:\Emgu\emgucv-windows-x86 2.3.0.1416\bin\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="ExifLib">
+      <HintPath>..\..\AboutImage\Exiflib\bin\Debug\ExifLib.dll</HintPath>
+    </Reference>
+    <Reference Include="FlickrNet, Version=3.2.4310.0, Culture=neutral, PublicKeyToken=2491df59efa5d132, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\FlickrNet-3.3.1\FlickrNet.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Expression.Prototyping.SketchControls" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web">
+      <HintPath>C:\Windows\Microsoft.NET\Framework\v2.0.50727\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WPFToolkit, Version=3.5.40128.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="EXIFextractor.cs" />
+    <Compile Include="MyPhoto.cs" />
+    <Compile Include="SampleData\SampleDataImageSource\SampleDataImageSource.xaml.cs">
+      <DependentUpon>SampleDataImageSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SRPage1.xaml.cs">
+      <DependentUpon>SRPage1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Str2VHConverter.cs" />
+    <Compile Include="translation.cs" />
+    <Page Include="ImageAnnotation-beta1.0Screens\SketchStyles.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+      <Link>SketchStyles.xaml</Link>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="SampleData\SampleDataImageSource\SampleDataImageSource.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="SRPage1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <AppDesigner Include="Properties\" />
+    <None Include="200218165013.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Application.ico">
+      <Visible>false</Visible>
+    </None>
+    <DesignTimeOnly Include="SampleData\SampleDataImageSource\SampleDataImageSource.xsd" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="200218163944.jpg" />
+    <Resource Include="20021816400.jpg" />
+    <Resource Include="200218164019.jpg" />
+    <Resource Include="200218164350.jpg" />
+    <Resource Include="200218164454.jpg" />
+    <Resource Include="200218164527.jpg" />
+    <Resource Include="200218164548.jpg" />
+    <Resource Include="200218164631.jpg" />
+    <Resource Include="200218164650.jpg" />
+    <Resource Include="200218164712.jpg" />
+    <Resource Include="200218164730.jpg" />
+    <Resource Include="20021816484.jpg" />
+    <Resource Include="200218164910.jpg" />
+    <Resource Include="200218164939.jpg" />
+    <Resource Include="200218165032.jpg" />
+    <Resource Include="SampleData\SampleDataImageSource\SampleDataImageSource_Files\image01.png" />
+    <Resource Include="SampleData\SampleDataImageSource\SampleDataImageSource_Files\image02.png" />
+    <Resource Include="SampleData\SampleDataImageSource\SampleDataImageSource_Files\image03.png" />
+    <Resource Include="SampleData\SampleDataImageSource\SampleDataImageSource_Files\image04.png" />
+    <Resource Include="SampleData\SampleDataImageSource\SampleDataImageSource_Files\image05.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="opencv_core231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="opencv_imgproc231.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icons\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AboutImage\source\ExifLibrary\ExifLibrary.csproj">
+      <Project>{C29BA585-E27B-4AD0-9AD1-490B5E0E2A5E}</Project>
+      <Name>ExifLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="ImageAnnotation-beta1.0Screens\ImageAnnotation-beta1.0Screens.csproj">
+      <Project>{70B29A7B-6B11-46FF-9C53-E67EB2F1829A}</Project>
+      <Name>ImageAnnotation-beta1.0Screens</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	     Other similar extension points exist, see Microsoft.Common.targets.
+	<Target Name="BeforeBuild">
+	</Target>
+	<Target Name="AfterBuild">
+	</Target>
+	-->
+</Project>
